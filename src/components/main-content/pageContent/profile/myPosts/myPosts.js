@@ -9,12 +9,17 @@ const MyPosts = (props) => {
             <Post textPost={el.post} likeCount={el.likeCount}/>
         )
     })
+    let textAreaElement = React.createRef()
+    let addPost = () => {
+            let text = textAreaElement.current.value
+            alert(text)
+    }
 
     return (
         <div className={classes.myPostWrapper}>
             <div className={classes.newPost}>
-                <div><textarea placeholder={'type ane text here'}></textarea></div>
-                <button id={'addPostBtn'}>add new post</button>
+                <div><textarea ref={textAreaElement} placeholder={'type ane text here'}></textarea></div>
+                <button onClick={addPost} id={'addPostBtn'}>add new post</button>
             </div>
             {posts}
         </div>
