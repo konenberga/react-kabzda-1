@@ -1,0 +1,15 @@
+.profileBg {
+    height: 200px;
+    background: url('https://vjoy.cc/wp-content/uploads/2019/08/1-22.jpg');
+}
+
+.profileDescription {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 10px;
+}
+
+.ava {
+    display: inline-block;
+    width: 50px;
+}

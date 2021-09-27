@@ -1,0 +1,11 @@
+.myPostWrapper {
+    padding: 10px;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+}
+.newPost {
+    padding: 10px;
+}

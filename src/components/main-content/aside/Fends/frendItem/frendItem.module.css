@@ -1,0 +1,13 @@
+.item {
+    max-width: 50px;
+    margin: 5px auto;
+}
+.item a img {
+    width: 100%;
+
+}
+.item a p {
+    text-align: center;
+    margin: 5px;
+}
+

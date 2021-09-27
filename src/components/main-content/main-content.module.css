@@ -1,0 +1,12 @@
+.mainContent {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 5fr 14fr 5fr;
+    grid-template-areas:
+            "nav page_content aside"
+;
+}
+
+a {
+    text-decoration: none;
+}

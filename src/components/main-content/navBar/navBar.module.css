@@ -1,0 +1,27 @@
+.navigation {
+    grid-area: nav;
+    height: 700px;
+    background-color: grey;
+    padding: 20px;
+}
+
+
+.item a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+
+}
+
+.item a:hover {
+    color: #fff;
+    background-color: dimgrey;
+    transition: 0.2s;
+    opacity: 80%;
+}
+
+a.activeLink {
+    color: #fff;
+    background-color: dimgrey;
+ }
