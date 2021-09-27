@@ -19,8 +19,14 @@
     opacity: 80%;
 }
 
-.chat{
+.newsMessageInput {
+    display: flex;
+}
 
+
+
+.chatMessage{
+height: 650px;
 }
 .messageWrapper {
 
