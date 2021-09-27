@@ -12,7 +12,8 @@ const MyPosts = (props) => {
     let textAreaElement = React.createRef()
     let addPost = () => {
             let text = textAreaElement.current.value
-            alert(text)
+        props.addPost(text)
+        textAreaElement.current.value = ''
     }
 
     return (

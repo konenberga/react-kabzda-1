@@ -1,3 +1,5 @@
+import {renderEntriesTree} from "../render";
+
 let state = {
     profilePage: {
         postData: [
@@ -35,12 +37,13 @@ let state = {
 
 
 export let addPost = (postMessage) => {
-    let post = {
+    let newPost = {
         id: 1,
         post: postMessage,
         likeCount: 0
     }
-    state.profilePage.postData.push(post)
+    state.profilePage.postData.push(newPost)
+    renderEntriesTree(state)
 }
 
 
