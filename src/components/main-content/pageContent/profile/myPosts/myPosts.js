@@ -14,13 +14,11 @@ const MyPosts = (props) => {
     let addPost = () => {
         let text = textAreaElement.current.value
         props.addPost(text)
-        props.updatePostText('')
     }
 
     let changeText = () => {
         let text = textAreaElement.current.value
         props.updatePostText(text)
-        console.log(text)
     }
 
     return (

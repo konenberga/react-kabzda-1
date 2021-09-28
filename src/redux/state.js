@@ -7,7 +7,7 @@ let state = {
             {id: 2, post: 'yoyoyoy second post  ', likeCount: 18},
             {id: 3, post: 'any text or post  ', likeCount: 5},
         ],
-        newPostText: 'text from state'
+        newPostText: ''
     },
     dialogsPage: {
         dialogsData: [
@@ -37,13 +37,14 @@ let state = {
 }
 
 
-export let addPost = (postMessage) => {
+export let addPost = () => {
     let newPost = {
         id: 1,
-        post: postMessage,
+        post: state.profilePage.newPostText,
         likeCount: 0
     }
     state.profilePage.postData.push(newPost)
+    state.profilePage.newPostText = ''
     renderEntriesTree(state)
 }
 
