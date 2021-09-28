@@ -10,16 +10,23 @@ const MyPosts = (props) => {
         )
     })
     let textAreaElement = React.createRef()
+
     let addPost = () => {
-            let text = textAreaElement.current.value
+        let text = textAreaElement.current.value
         props.addPost(text)
-        textAreaElement.current.value = ''
+        props.updatePostText('')
+    }
+
+    let changeText = () => {
+        let text = textAreaElement.current.value
+        props.updatePostText(text)
+        console.log(text)
     }
 
     return (
         <div className={classes.myPostWrapper}>
             <div className={classes.newPost}>
-                <div><textarea ref={textAreaElement} placeholder={'type ane text here'}></textarea></div>
+                <div><textarea onChange={changeText} ref={textAreaElement} placeholder={'type ane text here'} value={props.newPostText}/></div>
                 <button onClick={addPost} id={'addPostBtn'}>add new post</button>
             </div>
             {posts}

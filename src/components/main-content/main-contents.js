@@ -11,7 +11,7 @@ const MainContent = (props) => {
         <div className={'conteiner'}>
             <div className={classes.mainContent}>
                 <NavBar />
-                <PageContent state={props.state} addPost={props.addPost}/>
+                <PageContent state={props.state} addPost={props.addPost} updatePostText={props.updatePostText}/>
                 <Aside aside={props.state.aside}/>
             </div>
         </div>

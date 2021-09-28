@@ -11,7 +11,7 @@ const App = (props) => {
   return (
           <div className="app-wrapper">
               <Header />
-              <MainContent state={props.state} addPost={props.addPost}/>
+              <MainContent state={props.state} addPost={props.addPost} updatePostText={props.updatePostText}/>
           </div>
   );
 }
