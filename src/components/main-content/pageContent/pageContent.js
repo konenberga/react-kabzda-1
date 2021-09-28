@@ -13,7 +13,7 @@ const PageContent = (props) => {
         return (
             <div>
                     <Route path={'/profile'} render={() => <Profile profilePage={props.state.profilePage} updatePostText={props.updatePostText} addPost={props.addPost}/>}></Route>
-                    <Route path={'/dialogs'} render={() => <Dialogs dialogsPage={props.state.dialogsPage} />}></Route>
+                    <Route path={'/dialogs'} render={() => <Dialogs dialogsPage={props.state.dialogsPage} newDialogMessage={props.newDialogMessage}/>}></Route>
                     <Route path={'/news'} render={() => <News />} ></Route>
                     <Route path={'/music'} render={() => <Music />}></Route>
                     <Route path={'/setting'} render={() => <Settings />}></Route>

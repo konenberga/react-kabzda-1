@@ -12,9 +12,11 @@ const Dialogs = (props) => {
     let messages = props.dialogsPage.messageData.map( el => <Message message={el.message}/>);
 
     let textAreaElement = React.createRef()
+
     let sendMessage = () => {
-        let text = textAreaElement.current.value
-        alert(text)
+        let newMessage = textAreaElement.current.value
+        props.newDialogMessage(newMessage)
+        // textAreaElement.current.value = ''
     }
 
     return (
@@ -26,9 +28,10 @@ const Dialogs = (props) => {
                 <div>
                     <div className={classes.chatMessage}>
                         {messages}
+
                     </div>
                     <div className={classes.newsMessageInput}>
-                        <textarea ref={textAreaElement} placeholder={'type text here'}></textarea>
+                        <textarea ref={textAreaElement} placeholder={'type text here'} value={props.newMessageText}></textarea>
                         <button  onClick={sendMessage}>SEND</button>
                     </div>
                 </div>
