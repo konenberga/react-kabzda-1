@@ -26,7 +26,8 @@
 
 
 .chatMessage{
-height: 650px;
+    height: 650px;
+    overflow: auto;
 }
 .messageWrapper {
 

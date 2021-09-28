@@ -1,6 +1,5 @@
 import React from 'react'
 import classes from './dialogs.module.css'
-import {BrowserRouter, NavLink} from "react-router-dom";
 import Dialog from "./dialogItem/dialogItem";
 import Message from "./message/message";
 
@@ -15,8 +14,12 @@ const Dialogs = (props) => {
 
     let sendMessage = () => {
         let newMessage = textAreaElement.current.value
-        props.newDialogMessage(newMessage)
-        // textAreaElement.current.value = ''
+        props.sendNewMessage(newMessage)
+    }
+
+    let updateDialogText = () => {
+        let updateText = textAreaElement.current.value
+        props.updateDialogText(updateText)
     }
 
     return (
@@ -31,7 +34,7 @@ const Dialogs = (props) => {
 
                     </div>
                     <div className={classes.newsMessageInput}>
-                        <textarea ref={textAreaElement} placeholder={'type text here'} value={props.newMessageText}></textarea>
+                        <textarea onChange={updateDialogText} ref={textAreaElement} placeholder={'type text here'} value={props.dialogsPage.newMessageText}></textarea>
                         <button  onClick={sendMessage}>SEND</button>
                     </div>
                 </div>

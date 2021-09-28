@@ -1,5 +1,4 @@
 import React from 'react';
-import classes from './pageContent.module.css'
 import Profile from "./profile/profile";
 import Dialogs from "./dialogs/dialogs";
 import {Route} from "react-router-dom";
@@ -9,11 +8,12 @@ import News from "./news/news";
 
 
 
+
 const PageContent = (props) => {
         return (
             <div>
                     <Route path={'/profile'} render={() => <Profile profilePage={props.state.profilePage} updatePostText={props.updatePostText} addPost={props.addPost}/>}></Route>
-                    <Route path={'/dialogs'} render={() => <Dialogs dialogsPage={props.state.dialogsPage} newDialogMessage={props.newDialogMessage}/>}></Route>
+                    <Route path={'/dialogs'} render={() => <Dialogs dialogsPage={props.state.dialogsPage} sendNewMessage={props.sendNewMessage} updateDialogText={props.updateDialogText}/>}></Route>
                     <Route path={'/news'} render={() => <News />} ></Route>
                     <Route path={'/music'} render={() => <Music />}></Route>
                     <Route path={'/setting'} render={() => <Settings />}></Route>

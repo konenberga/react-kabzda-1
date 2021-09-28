@@ -23,7 +23,6 @@ let state = {
             {id: 2, message: 'I am want $10000000'},
             {id: 3, message: 'Visyakov p....r'},
         ],
-
         newMessageText: ''
     },
     aside: {
@@ -55,15 +54,20 @@ export let updatePostText = (text) => {
     renderEntriesTree(state)
 }
 
-export let newDialogMessage = (newMessage) => {
+export let sendNewMessage = () => {
     let newMessageData = {
         id: 4,
-        message: newMessage
+        message: state.dialogsPage.newMessageText
     }
     state.dialogsPage.messageData.push(newMessageData)
+    state.dialogsPage.newMessageText = ''
     renderEntriesTree(state)
 }
 
+export let updateDialogText = (updateText) => {
+    state.dialogsPage.newMessageText = updateText
+    renderEntriesTree(state)
+}
 
 export default state
 
