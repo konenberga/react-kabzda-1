@@ -1,4 +1,4 @@
-import {renderEntriesTree} from "../render";
+let renderEntriesTree = () => {}
 
 let state = {
     profilePage: {
@@ -67,6 +67,10 @@ export let sendNewMessage = () => {
 export let updateDialogText = (updateText) => {
     state.dialogsPage.newMessageText = updateText
     renderEntriesTree(state)
+}
+
+export const subscribe = (observer) => {
+    renderEntriesTree = observer
 }
 
 export default state
