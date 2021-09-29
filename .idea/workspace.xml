@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7ee5b0b3-3d58-4ace-a928-16382bfa475f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main-content/pageContent/profile/myPosts/myPosts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/profile/myPosts/myPosts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state.js" afterDir="false" />
     </list>
@@ -90,7 +91,7 @@
       <workItem from="1632835329519" duration="5494000" />
       <workItem from="1632841513244" duration="72000" />
       <workItem from="1632852700099" duration="5390000" />
-      <workItem from="1632897498046" duration="5137000" />
+      <workItem from="1632897498046" duration="10545000" />
     </task>
     <servers />
   </component>

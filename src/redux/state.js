@@ -1,81 +1,81 @@
-let renderEntriesTree = () => {}
 
-let state = {
-    profilePage: {
-        postData: [
-            {id: 1, post: 'hi its my first post  ', likeCount: 12},
-            {id: 2, post: 'yoyoyoy second post  ', likeCount: 18},
-            {id: 3, post: 'any text or post  ', likeCount: 5},
-        ],
-        newPostText: ''
+
+
+let store = {
+    _state: {
+        profilePage: {
+            postData: [
+                {id: 1, post: 'hi its my first post  ', likeCount: 12},
+                {id: 2, post: 'yoyoyoy second post  ', likeCount: 18},
+                {id: 3, post: 'any text or post  ', likeCount: 5},
+            ],
+            newPostText: ''
+        },
+        dialogsPage: {
+            dialogsData: [
+                {id: 1, name: 'Lexa'},
+                {id: 2, name: 'Denis'},
+                {id: 3, name: 'Dimych'},
+                {id: 4, name: 'Andriy'},
+                {id: 5, name: 'Natali'},
+
+            ],
+            messageData: [
+                {id: 1, message: 'hi, how are you'},
+                {id: 2, message: 'I am want $10000000'},
+                {id: 3, message: 'Visyakov p....r'},
+            ],
+            newMessageText: ''
+        },
+        aside: {
+            myFrends: [
+                {id: 1, name: 'Lexa'},
+                {id: 2, name: 'Denis'},
+                {id: 3, name: 'Dimych'},
+                {id: 4, name: 'Andriy'},
+                {id: 5, name: 'Natali'},
+
+            ]
+        }
     },
-    dialogsPage: {
-        dialogsData: [
-            {id: 1, name: 'Lexa'},
-            {id: 2, name: 'Denis'},
-            {id: 3, name: 'Dimych'},
-            {id: 4, name: 'Andriy'},
-            {id: 5, name: 'Natali'},
-
-        ],
-        messageData: [
-            {id: 1, message: 'hi, how are you'},
-            {id: 2, message: 'I am want $10000000'},
-            {id: 3, message: 'Visyakov p....r'},
-        ],
-        newMessageText: ''
+    getState() {
+        return this._state
     },
-    aside: {
-        myFrends: [
-            {id: 1, name: 'Lexa'},
-            {id: 2, name: 'Denis'},
-            {id: 3, name: 'Dimych'},
-            {id: 4, name: 'Andriy'},
-            {id: 5, name: 'Natali'},
-
-        ]
-    }
-}
-
-
-export let addPost = () => {
-    let newPost = {
-        id: 1,
-        post: state.profilePage.newPostText,
-        likeCount: 0
-    }
-    state.profilePage.postData.push(newPost)
-    state.profilePage.newPostText = ''
-    renderEntriesTree(state)
-}
-
-export let updatePostText = (text) => {
-    state.profilePage.newPostText = text
-    renderEntriesTree(state)
-}
-
-export let sendNewMessage = () => {
-    let newMessageData = {
-        id: 4,
-        message: state.dialogsPage.newMessageText
-    }
-    state.dialogsPage.messageData.push(newMessageData)
-    state.dialogsPage.newMessageText = ''
-    renderEntriesTree(state)
-}
-
-export let updateDialogText = (updateText) => {
-    state.dialogsPage.newMessageText = updateText
-    renderEntriesTree(state)
-}
-
-export const subscribe = (observer) => {
-    renderEntriesTree = observer
+    _callSubscriber() {},
+    addPost() {
+        let newPost = {
+            id: 1,
+            post: this._state.profilePage.newPostText,
+            likeCount: 0
+        }
+        this._state.profilePage.postData.push(newPost)
+        this._state.profilePage.newPostText = ''
+        this._callSubscriber(this._state)
+    },
+    updatePostText(text) {
+        this._state.profilePage.newPostText = text
+        this._callSubscriber(this._state)
+    },
+    sendNewMessage() {
+        let newMessageData = {
+            id: 4,
+            message: this._state.dialogsPage.newMessageText
+        }
+        this._state.dialogsPage.messageData.push(newMessageData)
+        this._state.dialogsPage.newMessageText = ''
+        this._callSubscriber(this._state)
+    },
+    updateDialogText(updateText) {
+        this._state.dialogsPage.newMessageText = updateText
+        this._callSubscriber(this._state)
+    },
+    subscribe(observer) {
+        this._callSubscriber = observer
+    },
 }
 
 
 
-
-export default state
+export default store
 
 

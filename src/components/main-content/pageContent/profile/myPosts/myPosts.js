@@ -15,7 +15,7 @@ const MyPosts = (props) => {
         let text = textAreaElement.current.value
         props.addPost(text)
     }
-
+debugger;
     let changeText = () => {
         let text = textAreaElement.current.value
         props.updatePostText(text)
