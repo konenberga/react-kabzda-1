@@ -38,22 +38,16 @@ let store = {
             ]
         }
     },
+    _callSubscriber() {},
+    subscribe(observer) {
+        this._callSubscriber = observer
+    },
     getState() {
         return this._state
     },
-    _callSubscriber() {},
-    addPost() {
-        let newPost = {
-            id: 1,
-            post: this._state.profilePage.newPostText,
-            likeCount: 0
-        }
-        this._state.profilePage.postData.push(newPost)
-        this._state.profilePage.newPostText = ''
-        this._callSubscriber(this._state)
-    },
-    updatePostText(text) {
-        this._state.profilePage.newPostText = text
+
+    updateDialogText(updateText) {
+        this._state.dialogsPage.newMessageText = updateText
         this._callSubscriber(this._state)
     },
     sendNewMessage() {
@@ -65,13 +59,26 @@ let store = {
         this._state.dialogsPage.newMessageText = ''
         this._callSubscriber(this._state)
     },
-    updateDialogText(updateText) {
-        this._state.dialogsPage.newMessageText = updateText
-        this._callSubscriber(this._state)
-    },
-    subscribe(observer) {
-        this._callSubscriber = observer
-    },
+
+
+    dispatch(action) {
+        if (action.type === 'updatePostText') {
+            this._state.profilePage.newPostText = action.text
+            this._callSubscriber(this._state)
+        } else if (action.type === 'addPost') {
+            let newPost = {
+                id: 1,
+                post: this._state.profilePage.newPostText,
+                likeCount: 0
+            }
+            this._state.profilePage.postData.push(newPost)
+            this._state.profilePage.newPostText = ''
+            this._callSubscriber(this._state)
+
+
+        }
+    }
+
 }
 
 

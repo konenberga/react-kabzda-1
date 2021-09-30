@@ -13,12 +13,11 @@ const MyPosts = (props) => {
 
     let addPost = () => {
         let text = textAreaElement.current.value
-        props.addPost(text)
+        props.dispatch({type: 'addPost'})
     }
-debugger;
     let changeText = () => {
         let text = textAreaElement.current.value
-        props.updatePostText(text)
+        props.dispatch({type: 'updatePostText', text})
     }
 
     return (

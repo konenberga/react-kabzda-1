@@ -10,7 +10,7 @@ const App = (props) => {
   return (
           <div className="app-wrapper">
               <Header />
-              <MainContent state={props.state} addPost={props.addPost} updatePostText={props.updatePostText} sendNewMessage={props.sendNewMessage} updateDialogText={props.updateDialogText}/>
+              <MainContent state={props.state} dispatch={props.dispatch} sendNewMessage={props.sendNewMessage} updateDialogText={props.updateDialogText}/>
           </div>
   );
 }
