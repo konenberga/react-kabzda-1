@@ -74,13 +74,13 @@ let store = {
             this._state.profilePage.postData.push(newPost)
             this._state.profilePage.newPostText = ''
             this._callSubscriber(this._state)
-
-
         }
     }
 
 }
 
+export const addPostActionCreator = () => ({type: 'addPost'})
+export const changeTextActonCreator = text => ({type: 'updatePostText', text})
 
 
 export default store

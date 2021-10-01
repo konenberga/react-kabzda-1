@@ -1,23 +1,21 @@
 import React from 'react';
 import Post from "./post/post";
 import classes from "./myPosts.module.css"
+import {addPostActionCreator, changeTextActonCreator} from "../../../../../redux/state";
 
 
 const MyPosts = (props) => {
-    let posts = props.postData.map((el) => {
-        return (
-            <Post textPost={el.post} likeCount={el.likeCount}/>
-        )
-    })
+    let posts = props.postData.map((el) => <Post textPost={el.post} likeCount={el.likeCount}/>)
+
     let textAreaElement = React.createRef()
 
     let addPost = () => {
         let text = textAreaElement.current.value
-        props.dispatch({type: 'addPost'})
+        props.dispatch(addPostActionCreator())
     }
     let changeText = () => {
         let text = textAreaElement.current.value
-        props.dispatch({type: 'updatePostText', text})
+        props.dispatch(changeTextActonCreator())
     }
 
     return (
