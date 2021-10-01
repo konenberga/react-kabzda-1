@@ -46,20 +46,6 @@ let store = {
         return this._state
     },
 
-    updateDialogText(updateText) {
-        this._state.dialogsPage.newMessageText = updateText
-        this._callSubscriber(this._state)
-    },
-    sendNewMessage() {
-        let newMessageData = {
-            id: 4,
-            message: this._state.dialogsPage.newMessageText
-        }
-        this._state.dialogsPage.messageData.push(newMessageData)
-        this._state.dialogsPage.newMessageText = ''
-        this._callSubscriber(this._state)
-    },
-
 
     dispatch(action) {
         if (action.type === 'updatePostText') {
@@ -74,6 +60,17 @@ let store = {
             this._state.profilePage.postData.push(newPost)
             this._state.profilePage.newPostText = ''
             this._callSubscriber(this._state)
+        } else if (action.value === 'updateDialogText') {
+            this._state.dialogsPage.newMessageText = action.updateText
+            this._callSubscriber(this._state)
+        } else if (action.value === 'sendMessage') {
+            let newMessageData = {
+                id: 4,
+                message: this._state.dialogsPage.newMessageText
+            }
+            this._state.dialogsPage.messageData.push(newMessageData)
+            this._state.dialogsPage.newMessageText = ''
+            this._callSubscriber(this._state)
         }
     }
 
@@ -81,6 +78,9 @@ let store = {
 
 export const addPostActionCreator = () => ({type: 'addPost'})
 export const changeTextActonCreator = text => ({type: 'updatePostText', text})
+export const sendMessageActionCreator = () => ({value: 'sendMessage'})
+export const updateDialogTextActionCreator = updateText => ({value: 'updateDialogText', updateText})
+
 
 
 export default store

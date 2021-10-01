@@ -11,7 +11,7 @@ let renderEntriesTree = (state) => {
     ReactDOM.render(
         <BrowserRouter>
             <React.StrictMode>
-                <App state={state} dispatch={store.dispatch.bind(store)} sendNewMessage={store.sendNewMessage.bind(store)} updateDialogText={store.updateDialogText.bind(store)}/>
+                <App state={state} dispatch={store.dispatch.bind(store)}/>
             </React.StrictMode>
         </BrowserRouter>,
         document.getElementById('root')

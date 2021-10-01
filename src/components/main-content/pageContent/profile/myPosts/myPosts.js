@@ -11,11 +11,11 @@ const MyPosts = (props) => {
 
     let addPost = () => {
         let text = textAreaElement.current.value
-        props.dispatch(addPostActionCreator())
+        props.dispatch(addPostActionCreator(text))
     }
     let changeText = () => {
         let text = textAreaElement.current.value
-        props.dispatch(changeTextActonCreator())
+        props.dispatch(changeTextActonCreator(text))
     }
 
     return (

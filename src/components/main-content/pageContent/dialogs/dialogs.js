@@ -2,6 +2,8 @@ import React from 'react'
 import classes from './dialogs.module.css'
 import Dialog from "./dialogItem/dialogItem";
 import Message from "./message/message";
+import {sendMessageActionCreator, updateDialogTextActionCreator} from "../../../../redux/state";
+
 
 
 
@@ -14,12 +16,12 @@ const Dialogs = (props) => {
 
     let sendMessage = () => {
         let newMessage = textAreaElement.current.value
-        props.sendNewMessage(newMessage)
+        props.dispatch(sendMessageActionCreator(newMessage))
     }
 
     let updateDialogText = () => {
         let updateText = textAreaElement.current.value
-        props.updateDialogText(updateText)
+        props.dispatch(updateDialogTextActionCreator(updateText))
     }
 
     return (
