@@ -6,6 +6,7 @@ import ProfileInfo from "./profileInfo/profileinfo";
 
 
 const Profile = (props) => {
+    debugger
     return (
         <div className={classes.profile}>
             <ProfileInfo />

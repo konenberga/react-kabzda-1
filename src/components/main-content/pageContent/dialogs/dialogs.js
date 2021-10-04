@@ -11,7 +11,7 @@ const Dialogs = (props) => {
     // debugger
     let dialogs = props.dialogsPage.dialogsData.map(el => <Dialog name={el.name} id={el.id}/>);
     let messages = props.dialogsPage.messageData.map( el => <Message message={el.message}/>);
-    // debugger
+    debugger
     let sendMessage = () => {
         props.dispatch(sendMessageActionCreator())
     }

@@ -7,6 +7,7 @@ import classes from './main-content.module.css'
 
 
 const MainContent = (props) => {
+
     return (
         <div className={'conteiner'}>
             <div className={classes.mainContent}>

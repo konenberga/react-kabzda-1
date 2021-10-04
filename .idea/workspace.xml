@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ee5b0b3-3d58-4ace-a928-16382bfa475f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/redux/dialogsReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/profileReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/asideReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main-content/main-contents.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-content/main-contents.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main-content/pageContent/dialogs/dialogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/dialogs/dialogs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main-content/pageContent/profile/myPosts/myPosts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/profile/myPosts/myPosts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/state.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main-content/pageContent/pageContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/pageContent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main-content/pageContent/profile/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/profile/profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/dialogsReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/dialogsReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/profileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profileReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +104,8 @@
       <workItem from="1632985508192" duration="6476000" />
       <workItem from="1633069301053" duration="5113000" />
       <workItem from="1633289892246" duration="576000" />
-      <workItem from="1633330507789" duration="3831000" />
+      <workItem from="1633330507789" duration="8733000" />
+      <workItem from="1633340622760" duration="920000" />
     </task>
     <servers />
   </component>

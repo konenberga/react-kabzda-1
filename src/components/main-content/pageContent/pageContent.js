@@ -10,6 +10,8 @@ import News from "./news/news";
 
 
 const PageContent = (props) => {
+    debugger
+
         return (
             <div>
                     <Route path={'/profile'} render={() => <Profile profilePage={props.state.profilePage} dispatch={props.dispatch} />}></Route>
