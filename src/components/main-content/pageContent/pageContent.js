@@ -5,17 +5,16 @@ import {Route} from "react-router-dom";
 import Settings from "./settings/settings";
 import Music from "./music/music";
 import News from "./news/news";
+import DialogsContainer from "./dialogs/dialogsContainer";
 
 
 
 
 const PageContent = (props) => {
-    debugger
-
-        return (
+            return (
             <div>
-                    <Route path={'/profile'} render={() => <Profile profilePage={props.state.profilePage} dispatch={props.dispatch} />}></Route>
-                    <Route path={'/dialogs'} render={() => <Dialogs dialogsPage={props.state.dialogsPage} dispatch={props.dispatch} />}></Route>
+                    <Route path={'/profile'} render={() => <Profile store={props.store}/>}></Route>
+                    <Route path={'/dialogs'} render={() => <DialogsContainer store={props.store} />}></Route>
                     <Route path={'/news'} render={() => <News />} ></Route>
                     <Route path={'/music'} render={() => <Music />}></Route>
                     <Route path={'/setting'} render={() => <Settings />}></Route>

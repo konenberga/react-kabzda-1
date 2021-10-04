@@ -6,13 +6,14 @@ import classes from './main-content.module.css'
 
 
 
+
 const MainContent = (props) => {
 
     return (
         <div className={'conteiner'}>
             <div className={classes.mainContent}>
                 <NavBar />
-                <PageContent state={props.state} dispatch={props.dispatch} />
+                <PageContent store={props.store} state={props.state} dispatch={props.dispatch} />
                 <Aside aside={props.state.aside}/>
             </div>
         </div>

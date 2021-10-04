@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ee5b0b3-3d58-4ace-a928-16382bfa475f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/redux/asideReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/dialogs/dialogsContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/profile/myPosts/myPostContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main-content/main-contents.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-content/main-contents.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main-content/pageContent/dialogs/dialogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/dialogs/dialogs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main-content/pageContent/pageContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/pageContent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main-content/pageContent/profile/myPosts/myPosts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/profile/myPosts/myPosts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main-content/pageContent/profile/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/profile/profile.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/dialogsReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/dialogsReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/profileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profileReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/state.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +40,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/main-content/pageContent/dialogs/message" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/main-content/pageContent/dialogs" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -53,17 +50,18 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\it-kamasutra\react-kabzda-kak-prosto\projects\01-first-project\react-kabzda-1\src\components\main-content\pageContent\dialogs" />
+      <recent name="D:\it-kamasutra\react-kabzda-kak-prosto\projects\01-first-project\react-kabzda-1\src\components\main-content\pageContent\dialogs\message" />
+      <recent name="D:\it-kamasutra\react-kabzda-kak-prosto\projects\01-first-project\react-kabzda-1\src\components\main-content\pageContent\dialogs\dialogItem" />
+      <recent name="D:\it-kamasutra\react-kabzda-kak-prosto\projects\01-first-project\react-kabzda-1\src\components\main-content\pageContent\profile\myPosts\post" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\it-kamasutra\react-kabzda-kak-prosto\projects\01-first-project\react-kabzda-1\src\components\main-content\pageContent" />
       <recent name="D:\it-kamasutra\react-kabzda-kak-prosto\projects\01-first-project\react-kabzda-1\src\components\main-content\pageContent\myNewsfeed" />
       <recent name="D:\it-kamasutra\react-kabzda-kak-prosto\projects\01-first-project\react-kabzda-1\src\components\main-content\navBar" />
       <recent name="D:\it-kamasutra\react-kabzda-kak-prosto\projects\01-first-project\react-kabzda-1\src\components\main-content\aside" />
       <recent name="D:\it-kamasutra\react-kabzda-kak-prosto\projects\01-first-project\react-kabzda-1\src\components\page-contents" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\it-kamasutra\react-kabzda-kak-prosto\projects\01-first-project\react-kabzda-1\src\components\main-content\pageContent\dialogs\message" />
-      <recent name="D:\it-kamasutra\react-kabzda-kak-prosto\projects\01-first-project\react-kabzda-1\src\components\main-content\pageContent\dialogs\dialogItem" />
-      <recent name="D:\it-kamasutra\react-kabzda-kak-prosto\projects\01-first-project\react-kabzda-1\src\components\main-content\pageContent\profile\myPosts\post" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -105,7 +103,7 @@
       <workItem from="1633069301053" duration="5113000" />
       <workItem from="1633289892246" duration="576000" />
       <workItem from="1633330507789" duration="8733000" />
-      <workItem from="1633340622760" duration="920000" />
+      <workItem from="1633340622760" duration="9570000" />
     </task>
     <servers />
   </component>
