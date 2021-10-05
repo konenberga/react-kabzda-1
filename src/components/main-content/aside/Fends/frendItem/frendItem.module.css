@@ -1,6 +1,7 @@
 .item {
     max-width: 50px;
     margin: 5px auto;
+    height: 100px;
 }
 .item a img {
     width: 100%;
