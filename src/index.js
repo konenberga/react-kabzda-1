@@ -8,7 +8,6 @@ import App from "./App";
 import {Provider} from "react-redux";
 
 
-let renderEntriesTree = (state) => {
     ReactDOM.render(
         <BrowserRouter>
             <React.StrictMode>
@@ -19,19 +18,6 @@ let renderEntriesTree = (state) => {
         </BrowserRouter>,
         document.getElementById('root')
     );
-}
-
-
-
-renderEntriesTree(store.getState())
-store.subscribe(() => {
-    let state = store.getState()
-    renderEntriesTree(state)
-})
-
-
-
-
 
 
 // If you want to start measuring performance in your app, pass a function

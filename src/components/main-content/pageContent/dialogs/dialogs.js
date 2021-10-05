@@ -13,7 +13,6 @@ const Dialogs = (props) => {
         let updateText = event.target.value
         props.updateDialogText(updateText)
     }
-
     return (
         <div>
             <div className={classes.chatRoom}>
@@ -23,7 +22,6 @@ const Dialogs = (props) => {
                 <div>
                     <div className={classes.chatMessage}>
                         {messages}
-
                     </div>
                     <div className={classes.newsMessageInput}>
                         <textarea onChange={onUpdateDialogText} placeholder={'type text here'} value={props.dialogsPage.newMessageText}></textarea>
