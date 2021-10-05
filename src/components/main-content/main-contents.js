@@ -13,8 +13,8 @@ const MainContent = (props) => {
         <div className={'conteiner'}>
             <div className={classes.mainContent}>
                 <NavBar />
-                <PageContent store={props.store} state={props.state} dispatch={props.dispatch} />
-                <Aside aside={props.state.aside}/>
+                <PageContent /*store={props.store} state={props.state} dispatch={props.dispatch}*/ />
+                <Aside /*aside={props.state.aside}*/ />
             </div>
         </div>
     )
