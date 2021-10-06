@@ -6,7 +6,7 @@ import FrendItem from "./frendItem/frendItem";
 
 const Frends = (props) => {
     // debugger;
-    let frendItem = props.frends.map(el=> <FrendItem name={el.name} id={el.id}/>)
+    let frendItem = props.frends.map(el=> <FrendItem name={el.name} id={el.id} key={el.id}/>)
         return (
         <div className={classes.frendWrapper}>
             {frendItem}
