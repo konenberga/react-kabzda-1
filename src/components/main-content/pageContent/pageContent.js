@@ -6,6 +6,7 @@ import Settings from "./settings/settings";
 import Music from "./music/music";
 import News from "./news/news";
 import DialogsContainer from "./dialogs/dialogsContainer";
+import UsersContainer from "./users/userContainer";
 
 
 
@@ -18,6 +19,7 @@ const PageContent = (props) => {
                     <Route path={'/news'} render={() => <News />} ></Route>
                     <Route path={'/music'} render={() => <Music />}></Route>
                     <Route path={'/setting'} render={() => <Settings />}></Route>
+                    <Route path={'/users'} render={()=> <UsersContainer />}></Route>
             </div>
     )
 }

@@ -1,0 +1,44 @@
+.item {
+    width: 70%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+
+.imgLogo {
+    width: 100px;
+}
+
+.imgLogo img {
+    width: 100%;
+}
+
+.button {
+    max-width: 90%;
+    margin: 0 auto;
+}
+.button button {
+    width: 100%;
+}
+
+
+.userInfo {
+    border: 1px solid black;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 80% 20%;
+    grid-template-areas: "fn l" "s l";
+    padding: 15px;
+}
+
+.fullName {
+    grid-area: fn;
+}
+
+.location {
+    grid-area: l;
+}
+.status{
+    grid-area: s;
+}

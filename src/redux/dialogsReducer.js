@@ -34,7 +34,7 @@ let dialogsReducer = (state = initializationState, action) => {
             return copyState
         case sendMessage:
             let newMessageData = {
-                id: 7,
+                id: state.messageData.length + 1,
                 message: state.newMessageText
             }
             copyState = {
