@@ -1,27 +1,7 @@
-import React from 'react';
-import classes from './aside.modele.css'
+// import React from 'react';
 import Frends from "./Fends/frends";
-import store from "../../../redux/redux-store";
 import {connect} from "react-redux";
 
-// const Aside = (props) => {
-//     return (
-//         <StoreContext.Consumer>
-//             {
-//                 (store) => {
-//                    return(
-//                        <div>
-//                            <aside>
-//                                <Frends frends={store.getState().aside.myFrends}/>
-//                            </aside>
-//                        </div>
-//                    )
-//                 }
-//             }
-//         </StoreContext.Consumer>
-//
-//     )
-// }
 
 let mapStateToProps = (state) => {
     return {
