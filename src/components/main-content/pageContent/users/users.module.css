@@ -39,6 +39,22 @@
 .location {
     grid-area: l;
 }
+
+.location p {
+    overflow: hidden;
+}
 .status{
     grid-area: s;
+}
+
+.selectedPage {
+    font-weight: bold;
+}
+
+.pageNumbers {
+    width: 300px;
+    overflow: hidden;
+}
+.pageNumbers span {
+    margin: 0 5px;
 }
