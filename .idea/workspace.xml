@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ee5b0b3-3d58-4ace-a928-16382bfa475f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/common/preloader/preloader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/common/preloader/preloader.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main-content/pageContent/users/userContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/users/userContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main-content/pageContent/users/usersAPIComponent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/users/usersAPIComponent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/usersReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/usersReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +17,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -115,7 +117,8 @@
       <workItem from="1635243607716" duration="972000" />
       <workItem from="1635247036887" duration="80000" />
       <workItem from="1635254154102" duration="2497000" />
-      <workItem from="1635319609415" duration="1947000" />
+      <workItem from="1635319609415" duration="2148000" />
+      <workItem from="1635334195341" duration="3027000" />
     </task>
     <servers />
   </component>
@@ -150,17 +153,5 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1632985721063" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/main-content/pageContent/users/usersAPIComponent.jsx</url>
-          <line>16</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
