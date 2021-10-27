@@ -16,7 +16,7 @@ export const setTotalUsersCountAC = (totalUsersCount) => ({type: setTotalUsersCo
 let initializationState = {
     users: [],
     totalUsersCount: 0,
-    pageSize: 5,
+    pageSize: 10,
     currentPage: 1
 
 }
