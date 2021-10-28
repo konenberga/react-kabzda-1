@@ -4,11 +4,9 @@
     <list default="true" id="7ee5b0b3-3d58-4ace-a928-16382bfa475f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main-content/pageContent/pageContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/pageContent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main-content/pageContent/profile/profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/profile/profileContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main-content/pageContent/profile/profileInfo/profileInfo.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/profile/profileInfo/profileInfo.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main-content/pageContent/profile/profileContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/profile/profileContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main-content/pageContent/profile/profileInfo/profileinfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/profile/profileInfo/profileinfo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main-content/pageContent/users/users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/users/users.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/profileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profileReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +136,8 @@
       <workItem from="1635254154102" duration="2497000" />
       <workItem from="1635319609415" duration="2148000" />
       <workItem from="1635334195341" duration="3874000" />
-      <workItem from="1635403258873" duration="8269000" />
+      <workItem from="1635403258873" duration="8426000" />
+      <workItem from="1635428200598" duration="1397000" />
     </task>
     <servers />
   </component>

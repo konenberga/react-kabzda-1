@@ -12,7 +12,6 @@ const Users = (props) => {
     for (let i = 1; i <= pageCount + 5; i++) {
         pages.push(i)
     }
-
     return (
         <div>
             <div className={classes.pageNumbers}>
@@ -26,7 +25,7 @@ const Users = (props) => {
             {
                 props.users.map(el => <div key={el.id} className={classes.item}>
                     <div>
-                        <NavLink to={`profile/2`}>
+                        <NavLink to={`profile/${el.id}`}>
                             <div className={classes.imgLogo}>
                                 <img src={el.photos.small != null ? el.photos.small : userPhoto} alt=""/>
                             </div>

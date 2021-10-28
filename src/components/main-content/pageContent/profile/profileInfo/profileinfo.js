@@ -3,7 +3,6 @@ import classes from "./profileInfo.module.css";
 import Preloader from "../../../../common/preloader/preloader";
 
 const ProfileInfo = (props) => {
-    debugger
     return (
         <>
             {
