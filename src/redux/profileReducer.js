@@ -1,8 +1,10 @@
-export const addPostActionCreator = () => ({type: 'addPost'})
-export const changeTextActonCreator = text => ({type: 'updatePostText', text})
-
 const updatePostText = 'updatePostText'
 const addPost = 'addPost'
+const SET_PROFILE_INFO = 'SET_PROFILE_INFO'
+
+export const addPostActionCreator = () => ({type: 'addPost'})
+export const changeTextActonCreator = text => ({type: 'updatePostText', text})
+export const setProfileInfo = profile => ({type: SET_PROFILE_INFO, profile})
 
 let initializationState = {
     postData: [
@@ -10,7 +12,9 @@ let initializationState = {
         {id: 2, post: 'yoyoyoy second post  ', likeCount: 18},
         {id: 3, post: 'any text or post  ', likeCount: 5},
     ],
-    newPostText: ''
+    newPostText: '',
+    profileInfo: null
+
 }
 
 let profileReducer = (state = initializationState, action) => {
@@ -34,6 +38,11 @@ let profileReducer = (state = initializationState, action) => {
                 postData: [...state.postData, newPost],
                 newPostText: ''
             };
+            return copyState
+        case SET_PROFILE_INFO:
+            copyState = {
+                ...state, profileInfo: action.profile
+            }
             return copyState
     }
     return state

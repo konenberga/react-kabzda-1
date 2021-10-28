@@ -2,6 +2,7 @@ import React from 'react'
 import classes from "./users.module.css";
 import * as axios from "axios";
 import userPhoto from '../../../../assets/images/userAvatar.png'
+import {NavLink} from "react-router-dom";
 
 
 const Users = (props) => {
@@ -25,8 +26,11 @@ const Users = (props) => {
             {
                 props.users.map(el => <div key={el.id} className={classes.item}>
                     <div>
-                        <div className={classes.imgLogo}><img
-                            src={el.photos.small != null ? el.photos.small : userPhoto} alt=""/></div>
+                        <NavLink to={`profile/2`}>
+                            <div className={classes.imgLogo}>
+                                <img src={el.photos.small != null ? el.photos.small : userPhoto} alt=""/>
+                            </div>
+                        </NavLink>
                         <div className={classes.button}>{
                             el.followed
                                 ? <button onClick={() => {
