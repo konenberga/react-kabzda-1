@@ -1,20 +1,23 @@
 import mapStateToProps from "react-redux/lib/connect/mapStateToProps";
 
-const follow = 'FOLLOW'
-const unfollow = 'UNFOLLOW'
-const setUsers = 'SET-USERS'
-const setCurrentPage = 'SET-CURRENT-PAGE'
-const setTotalUsersCount = 'SET-TOTAL-USERS-COUNT'
-const toggleIsFetching = 'TOGGLE-IS-FETCHING'
 
+// actions
+const FOLLOW = 'FOLLOW'
+const UNFOLLOW = 'UNFOLLOW'
+const SET_USERS = 'SET_USERS'
+const SET_CURRENT_PAGE = 'SET_CURRENT_PAGE'
+const SET_TOTAL_USERS_COUNT = 'SET_TOTAL_USERS_COUNT'
+const TOGGLE_IS_FETCHING = 'TOGGLE_IS_FETCHING'
 
-export const followAC = (userId) => ({type: follow, userId})
-export const unfollowAC = (userId) => ({type: unfollow, userId})
-export const setUsersAC = (users) => ({type: setUsers, users})
-export const setCurrentPageAC = (currentPage) => ({type: setCurrentPage, currentPage})
-export const setTotalUsersCountAC = (totalUsersCount) => ({type: setTotalUsersCount, totalUsersCount})
-export const toggleIsFetchingAC = (isFetching) => ({type: toggleIsFetching, isFetching})
+//actions creators
+export const follow = (userId) => ({type: FOLLOW, userId})
+export const unfollow = (userId) => ({type: UNFOLLOW, userId})
+export const setUsers = (users) => ({type: SET_USERS, users})
+export const setCurrentPage = (currentPage) => ({type: SET_CURRENT_PAGE, currentPage})
+export const setTotalUsersCount = (totalUsersCount) => ({type: SET_TOTAL_USERS_COUNT, totalUsersCount})
+export const toggleIsFetching = (isFetching) => ({type: TOGGLE_IS_FETCHING, isFetching})
 
+//init state
 let initializationState = {
     users: [],
     totalUsersCount: 0,
@@ -24,10 +27,12 @@ let initializationState = {
 
 }
 
+
+//reducer
 const usersReducer = (state = initializationState, action) => {
     let stateCopy;
     switch (action.type) {
-        case follow:
+        case FOLLOW:
             return {...state,
                 users: state.users.map(el => {
                     if (el.id === action.userId) {
@@ -37,7 +42,7 @@ const usersReducer = (state = initializationState, action) => {
                 })
             }
 
-        case unfollow:
+        case UNFOLLOW:
             return {...state,
                 users: state.users.map(el => {
                     if (el.id == action.userId) {
@@ -47,14 +52,14 @@ const usersReducer = (state = initializationState, action) => {
                 })
         }
 
-        case setUsers:
+        case SET_USERS:
           return {...state, users: [...action.users]}
 
-        case setCurrentPage:
+        case SET_CURRENT_PAGE:
             return {...state, currentPage: action.currentPage}
-        case setTotalUsersCount:
+        case SET_TOTAL_USERS_COUNT:
             return {...state, totalUsersCount: action.totalUsersCount}
-        case toggleIsFetching:
+        case TOGGLE_IS_FETCHING:
             return {...state, isFetching: action.isFetching}
 
 
