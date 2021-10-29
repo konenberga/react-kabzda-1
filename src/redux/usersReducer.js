@@ -1,5 +1,3 @@
-import mapStateToProps from "react-redux/lib/connect/mapStateToProps";
-
 
 // actions
 const FOLLOW = 'FOLLOW'
