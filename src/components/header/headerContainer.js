@@ -27,9 +27,9 @@ class HeaderComponent  extends React.Component{
 
 let mapStateToProps = (state) => {
     return{
-        email: state.auth.email,
-        id: state.auth.id,
-        login: state.auth.login,
+        email: state.authUser.email,
+        id: state.authUser.id,
+        login: state.authUser.login,
         }
 }
 
