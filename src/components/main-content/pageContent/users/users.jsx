@@ -33,11 +33,32 @@ const Users = (props) => {
                         <div className={classes.button}>{
                             el.followed
                                 ? <button onClick={() => {
-                                    props.follow(el.id)
-                                }}>follow</button>
+                                    axios.delete(`https://social-network.samuraijs.com/api/1.0/follow/${el.id}`, {
+                                        withCredentials: true,
+                                        headers: {'API-KEY': '600758f2-c7ef-4d81-a818-35c05b5cf5af'}
+                                    })
+                                        .then(response => {
+                                                if (response.data.resultCode == 0) {
+                                                    props.unfollow(el.id)
+                                                }
+                                            }
+                                        )
+
+                                }
+                                }>unfollow</button>
                                 : <button onClick={() => {
-                                    props.unfollow(el.id)
-                                }}>unfollow</button>
+                                    axios.post(`https://social-network.samuraijs.com/api/1.0/follow/${el.id}`, {}, {
+                                        withCredentials: true,
+                                        headers: {'API-KEY': '600758f2-c7ef-4d81-a818-35c05b5cf5af'}
+                                    })
+                                        .then(response => {
+                                                if (response.data.resultCode == 0) {
+                                                    props.follow(el.id)
+                                                }
+                                            }
+                                        )
+                                }
+                                }>follow</button>
                         }</div>
                     </div>
                     <div className={classes.userInfo}>
