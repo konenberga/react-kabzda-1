@@ -33,30 +33,10 @@ const Users = (props) => {
                         </NavLink>
                         <div className={classes.button}>{
                             el.followed
-                                ? <button disabled={props.followingInProgress.some(id => id == el.id)} onClick={() => {
-                                    props.toggleFollowingInProgress(true, el.id)
-                                    followAPI.unfollow(el.id)
-                                        .then(data => {
-                                                if (data.resultCode == 0) {
-                                                    props.unfollow(el.id)
-                                                    props.toggleFollowingInProgress(false, el.id)
-                                                }
-                                            }
-                                        )
-                                }
-                                }>unfollow</button>
-                                : <button disabled={props.followingInProgress.some(id => id == el.id)} onClick={() => {
-                                    props.toggleFollowingInProgress(true, el.id)
-                                    followAPI.follow(el.id)
-                                        .then(data => {
-                                                if (data.resultCode == 0) {
-                                                    props.follow(el.id)
-                                                    props.toggleFollowingInProgress(false, el.id)
-                                                }
-                                            }
-                                        )
-                                }
-                                }>follow</button>
+                                ? <button disabled={props.followingInProgress.some(id => id == el.id)}
+                                          onClick={() => props.unfollow(el.id)}>unfollow</button>
+                                : <button disabled={props.followingInProgress.some(id => id == el.id)}
+                                          onClick={() => props.follow(el.id)}>follow</button>
                         }</div>
                     </div>
                     <div className={classes.userInfo}>
