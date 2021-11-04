@@ -6,22 +6,23 @@ import {connect} from "react-redux";
 import * as axios from "axios";
 import Preloader from "../../../common/preloader/preloader";
 import {toggleIsFetching} from "../../../../redux/usersReducer";
-import {setProfileInfo} from "../../../../redux/profileReducer";
+import {getUserProfileThC, setProfileInfo} from "../../../../redux/profileReducer";
 import {withRouter} from "react-router-dom";
 
 
 class ProfileComponent extends React.Component {
 
     componentDidMount() {
-        let userId = this.props.match.params.userId
-        !userId ? userId =2 : userId = userId
-        this.props.toggleIsFetching(true)
-        axios.get(`https://social-network.samuraijs.com/api/1.0/profile/${userId}`)
-            .then(response => {
-                    this.props.toggleIsFetching(false)
-                    this.props.setProfileInfo(response.data)
-                }
-            )
+        this.props.getUserProfile(this.props.match.params.userId)
+        // let userId = this.props.match.params.userId
+        // !userId ? userId = 2 : userId = userId
+        // this.props.toggleIsFetching(true)
+        // axios.get(`https://social-network.samuraijs.com/api/1.0/profile/${userId}`)
+        //     .then(response => {
+        //             this.props.toggleIsFetching(false)
+        //             this.props.setProfileInfo(response.data)
+        //         }
+        //     )
     }
 
 
@@ -56,7 +57,8 @@ let mapStateToProps = (state) => {
 
 const ProfileContainer = connect(mapStateToProps, {
     toggleIsFetching,
-    setProfileInfo
+    setProfileInfo,
+    getUserProfile: getUserProfileThC
 })(withRouter(ProfileComponent))
 
 export default ProfileContainer;
