@@ -1,9 +1,9 @@
-const updateDialogText = 'updateDialogText'
-const sendMessage = 'sendMessage'
+const UPDATE_DIALOG_TEXT = 'UPDATE_DIALOG_TEXT'
+const SEND_MESSAGE = 'SEND_MESSAGE'
 
 
-export const sendMessageActionCreator = () => ({type: sendMessage})
-export const updateDialogTextActionCreator = updateText => ({type: updateDialogText, updateText})
+export const sendMessage = () => ({type: SEND_MESSAGE})
+export const updateDialogText = updateText => ({type: UPDATE_DIALOG_TEXT, updateText})
 
 let initializationState = {
     dialogsData: [
@@ -26,13 +26,13 @@ let initializationState = {
 let dialogsReducer = (state = initializationState, action) => {
     let copyState
     switch (action.type) {
-        case updateDialogText:
+        case UPDATE_DIALOG_TEXT:
             copyState = {
                 ...state,
                 newMessageText: action.updateText
             }
             return copyState
-        case sendMessage:
+        case SEND_MESSAGE:
             let newMessageData = {
                 id: state.messageData.length + 1,
                 message: state.newMessageText

@@ -20,7 +20,7 @@ export const authAPI = {
     authMe() {
         return (
             axiosInstance.get(`auth/me`)
-                .then(response => response.data.data)
+                .then(response => response.data)
         )
     }
 }

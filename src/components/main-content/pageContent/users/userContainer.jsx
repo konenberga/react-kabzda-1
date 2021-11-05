@@ -10,7 +10,6 @@ import {
 } from "../../../../redux/usersReducer";
 import Users from "./users";
 import Preloader from "../../../common/preloader/preloader";
-import {usersAPI} from "../../../../api/api";
 
 
 class UsersComponent extends React.Component {

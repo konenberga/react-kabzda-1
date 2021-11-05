@@ -12,8 +12,11 @@ export const authMeThC = () => {
     return (dispatch) => {
         authAPI.authMe()
             .then(data => {
-                let {email, id, login} = data
-                dispatch(setAuthUserData(email, id, login))
+                if(data.resultCode === 0) {
+                    let {email, id, login} = data.data
+                    dispatch(setAuthUserData(email, id, login))
+                }
+
             })
     }
 }
@@ -25,7 +28,8 @@ export const authMeThC = () => {
 let initializationState = {
     email: null,
     id: null,
-    login: null
+    login: null,
+    isAuth: false
 }
 
 
@@ -37,7 +41,8 @@ const authReducer = (state = initializationState, action) => {
                 ...state,
                 email: action.email,
                 id: action.id,
-                login: action.login
+                login: action.login,
+                isAuth: true
             }
 
         default :

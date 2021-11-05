@@ -12,9 +12,9 @@ const Header = (props) => {
                 <img className="logo-img" src="https://themified.com/friend-finder/images/logo.png" alt="logo"/>
                 <div className={classes.auth}>
                     {
-                        (props.login)
-                            ? <div>{`${props.login} `}<NavLink to={'/auth//login'}>sing out</NavLink></div>
-                            : <div><NavLink to={'/auth//login'}>sing in</NavLink></div>
+                        (props.isAuth)
+                            ? <div>{`${props.login} `}<NavLink to={'/login'}>sing out</NavLink></div>
+                            : <div><NavLink to={'/login'}>sing in</NavLink></div>
                     }
                 </div>
 
