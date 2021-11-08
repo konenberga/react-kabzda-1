@@ -3,12 +3,11 @@ import classes from './profile.module.css'
 import ProfileInfo from "./profileInfo/profileinfo";
 import MyPostContainer from "./myPosts/myPostContainer";
 import {connect} from "react-redux";
-import * as axios from "axios";
 import Preloader from "../../../common/preloader/preloader";
 import {toggleIsFetching} from "../../../../redux/usersReducer";
 import {getUserProfileThC, setProfileInfo} from "../../../../redux/profileReducer";
 import {withRouter} from "react-router-dom";
-import Redirect from "react-router-dom/es/Redirect";
+import {withAuthRedirect} from "../../../../hoc/withAuthRedirect";
 
 
 class ProfileComponent extends React.Component {
@@ -17,9 +16,7 @@ class ProfileComponent extends React.Component {
         this.props.getUserProfile(this.props.match.params.userId)
     }
 
-
     render() {
-        if (this.props.isAuth == false) return <Redirect to={'/login'} />
         return (
             <>
                 {
@@ -41,18 +38,22 @@ let mapStateToProps = (state) => {
         {
             isFetching: state.usersPage.isFetching,
             profileInfo: state.profilePage.profileInfo,
-            isAuth: state.authUser.isAuth
         }
     )
 }
 
-
-
+// let authRedirectComponent = withAuthRedirect(ProfileComponent)
+// authRedirectComponent = connect(mapStateToPropsForAuthRedirect)(authRedirectComponent)
+// let authRedirectComponent = (props) => {
+//     debugger
+//     if (this.props.isAuth == false) return <Redirect to={'/login'} />
+//     return <ProfileComponent {...props}/>
+// }
 
 const ProfileContainer = connect(mapStateToProps, {
     toggleIsFetching,
     setProfileInfo,
     getUserProfile: getUserProfileThC
-})(withRouter(ProfileComponent))
+})(withRouter(withAuthRedirect(ProfileComponent)))
 
 export default ProfileContainer;

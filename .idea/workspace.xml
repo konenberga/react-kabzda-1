@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ee5b0b3-3d58-4ace-a928-16382bfa475f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/login/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hoc/withAuthRedirect.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/headerContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/headerContainer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main-content/pageContent/dialogs/dialogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/dialogs/dialogs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main-content/pageContent/dialogs/dialogsContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/dialogs/dialogsContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main-content/pageContent/pageContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/pageContent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/main-content/pageContent/profile/profileContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/profile/profileContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/authReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/dialogsReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/dialogsReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,7 +145,8 @@
       <workItem from="1635796578520" duration="7909000" />
       <workItem from="1636011048989" duration="7447000" />
       <workItem from="1636106964249" duration="1005000" />
-      <workItem from="1636109185870" duration="2400000" />
+      <workItem from="1636109185870" duration="2700000" />
+      <workItem from="1636365762182" duration="6046000" />
     </task>
     <servers />
   </component>
@@ -208,7 +203,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/main-content/pageContent/users/userContainer.jsx</url>
-          <line>21</line>
+          <line>20</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

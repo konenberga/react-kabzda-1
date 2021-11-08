@@ -15,7 +15,7 @@ const Dialogs = (props) => {
         props.updateDialogText(updateText)
     }
 
-    if (props.isAuth == false) return <Redirect to={'/login'} />
+    // if (props.isAuth == false) return <Redirect to={'/login'} />
     return (
         <div>
             <div className={classes.chatRoom}>
