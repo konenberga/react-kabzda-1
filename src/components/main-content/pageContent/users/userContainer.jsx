@@ -10,6 +10,7 @@ import {
 } from "../../../../redux/usersReducer";
 import Users from "./users";
 import Preloader from "../../../common/preloader/preloader";
+import {compose} from "redux";
 
 
 class UsersComponent extends React.Component {
@@ -55,17 +56,30 @@ let mapStateToProps = (state) => {
     }
 }
 
+export default compose(
+    connect(mapStateToProps, {
+        //action creators
+        setCurrentPage,
+        setTotalUsersCount,
+        setUsers,
+        toggleIsFetching,
+        toggleFollowingInProgress,
+        getUsers: getUsersThC,
+        unfollow: unfollowThC,
+        follow: followThC
+    })
+)(UsersComponent)
 
-const UsersContainer = connect(mapStateToProps, {
-    //action creators
-    setCurrentPage,
-    setTotalUsersCount,
-    setUsers,
-    toggleIsFetching,
-    toggleFollowingInProgress,
-    getUsers: getUsersThC,
-    unfollow: unfollowThC,
-    follow: followThC
-})(UsersComponent)
+// const UsersContainer = connect(mapStateToProps, {
+//     //action creators
+//     setCurrentPage,
+//     setTotalUsersCount,
+//     setUsers,
+//     toggleIsFetching,
+//     toggleFollowingInProgress,
+//     getUsers: getUsersThC,
+//     unfollow: unfollowThC,
+//     follow: followThC
+// })(UsersComponent)
 
-export default UsersContainer
+// export default UsersContainer

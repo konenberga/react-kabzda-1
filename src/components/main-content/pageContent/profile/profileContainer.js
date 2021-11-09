@@ -8,6 +8,7 @@ import {toggleIsFetching} from "../../../../redux/usersReducer";
 import {getUserProfileThC, setProfileInfo} from "../../../../redux/profileReducer";
 import {withRouter} from "react-router-dom";
 import {withAuthRedirect} from "../../../../hoc/withAuthRedirect";
+import {compose} from "redux";
 
 
 class ProfileComponent extends React.Component {
@@ -50,10 +51,20 @@ let mapStateToProps = (state) => {
 //     return <ProfileComponent {...props}/>
 // }
 
-const ProfileContainer = connect(mapStateToProps, {
-    toggleIsFetching,
-    setProfileInfo,
-    getUserProfile: getUserProfileThC
-})(withRouter(withAuthRedirect(ProfileComponent)))
+// const ProfileContainer = connect(mapStateToProps, {
+// //     toggleIsFetching,
+// //     setProfileInfo,
+// //     getUserProfile: getUserProfileThC
+// // })(withRouter(withAuthRedirect(ProfileComponent)))
+// //
+// // export default ProfileContainer;
 
-export default ProfileContainer;
+export default compose(
+    connect(mapStateToProps, {
+        toggleIsFetching,
+        setProfileInfo,
+        getUserProfile: getUserProfileThC
+    }),
+    withRouter,
+    withAuthRedirect
+)(ProfileComponent)
