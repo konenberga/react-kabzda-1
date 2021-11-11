@@ -5,16 +5,26 @@ import MyPostContainer from "./myPosts/myPostContainer";
 import {connect} from "react-redux";
 import Preloader from "../../../common/preloader/preloader";
 import {toggleIsFetching} from "../../../../redux/usersReducer";
-import {getUserProfileThC, setProfileInfo} from "../../../../redux/profileReducer";
+import {
+    getUserProfileThC,
+    getUserStatusThC,
+    setProfileInfo,
+    updateUserStatusThC
+} from "../../../../redux/profileReducer";
 import {withRouter} from "react-router-dom";
-import {withAuthRedirect} from "../../../../hoc/withAuthRedirect";
 import {compose} from "redux";
+import {withAuthRedirect} from "../../../../hoc/withAuthRedirect";
 
 
 class ProfileComponent extends React.Component {
 
     componentDidMount() {
-        this.props.getUserProfile(this.props.match.params.userId)
+        let userId = this.props.match.params.userId
+            if (!userId) {
+            userId = 20481
+        }
+        this.props.getUserProfile(userId)
+        this.props.getUserStatus(userId)
     }
 
     render() {
@@ -39,6 +49,7 @@ let mapStateToProps = (state) => {
         {
             isFetching: state.usersPage.isFetching,
             profileInfo: state.profilePage.profileInfo,
+            status: state.profilePage.status
         }
     )
 }
@@ -63,8 +74,10 @@ export default compose(
     connect(mapStateToProps, {
         toggleIsFetching,
         setProfileInfo,
-        getUserProfile: getUserProfileThC
+        getUserProfile: getUserProfileThC,
+        getUserStatus: getUserStatusThC,
+        updateUserStatus: updateUserStatusThC
     }),
     withRouter,
-    withAuthRedirect
+    // withAuthRedirect
 )(ProfileComponent)
