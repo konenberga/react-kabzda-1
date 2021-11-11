@@ -18,11 +18,19 @@ class ProfileStatus extends React.Component {
         this.setState(
             {editMode: false}
         )
-        this.props.updateUserStatus(this.state.status)
+        if (this.state.status != false && this.state.status.length < 100) {
+            this.props.updateUserStatus(this.state.status)
+        }
     }
 
     onStatusChange = (event) => {
         this.setState({status: event.currentTarget.value})
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        if (prevProps.status !== this.props.status) {
+            this.setState({status: this.props.status})
+        }
     }
 
 
