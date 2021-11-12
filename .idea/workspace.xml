@@ -3,11 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="7ee5b0b3-3d58-4ace-a928-16382bfa475f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main-content/pageContent/login/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/login/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main-content/pageContent/dialogs/dialogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/dialogs/dialogs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main-content/pageContent/dialogs/dialogsContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/dialogs/dialogsContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main-content/pageContent/profile/myPosts/myPostContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/profile/myPosts/myPostContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main-content/pageContent/profile/myPosts/myPosts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/profile/myPosts/myPosts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/dialogsReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/dialogsReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/profileReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/profileReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +154,9 @@
       <workItem from="1636532379510" duration="3769000" />
       <workItem from="1636616889798" duration="12598000" />
       <workItem from="1636640812055" duration="2597000" />
-      <workItem from="1636702862532" duration="5138000" />
+      <workItem from="1636702862532" duration="5269000" />
+      <workItem from="1636711401332" duration="3673000" />
+      <workItem from="1636718906251" duration="3991000" />
     </task>
     <servers />
   </component>
@@ -173,22 +177,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="707" y="376" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1632252558244" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1636704258178">
+    <state x="393" y="114" key="CommitChangelistDialog2" timestamp="1636709850983">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1636704258178" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1636704258178">
+    <state x="393" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1636709850983" />
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1636709863383">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1636704258178" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1636704258178">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1636709863383" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1636709863383">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1636704258178" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1636704258178">
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1636709863383" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1636709863383">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1636704258178" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1636709863383" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1636709863383">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1636709863383" />
     <state x="665" y="231" key="RollbackChangesDialog" timestamp="1633591844725">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

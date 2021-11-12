@@ -1,9 +1,7 @@
-const UPDATE_DIALOG_TEXT = 'UPDATE_DIALOG_TEXT'
 const SEND_MESSAGE = 'SEND_MESSAGE'
 
 
-export const sendMessage = () => ({type: SEND_MESSAGE})
-export const updateDialogText = updateText => ({type: UPDATE_DIALOG_TEXT, updateText})
+export const sendMessage = (newMessageText) => ({type: SEND_MESSAGE, newMessageText})
 
 let initializationState = {
     dialogsData: [
@@ -26,16 +24,10 @@ let initializationState = {
 let dialogsReducer = (state = initializationState, action) => {
     let copyState
     switch (action.type) {
-        case UPDATE_DIALOG_TEXT:
-            copyState = {
-                ...state,
-                newMessageText: action.updateText
-            }
-            return copyState
         case SEND_MESSAGE:
             let newMessageData = {
                 id: state.messageData.length + 1,
-                message: state.newMessageText
+                message: action.newMessageText
             }
             copyState = {
                 ...state,

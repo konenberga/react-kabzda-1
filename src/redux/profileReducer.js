@@ -1,14 +1,12 @@
 import {toggleIsFetching} from "./usersReducer";
 import {profileAPI} from "../api/api";
 
-const updatePostText = 'updatePostText'
-const addPost = 'addPost'
+const ADD_POST = 'ADD_POST'
 const SET_PROFILE_INFO = 'SET_PROFILE_INFO'
 const SET_USER_STATUS = 'SET_USER_STATUS'
 
 //action creators
-export const addPostActionCreator = () => ({type: 'addPost'})
-export const changeTextActonCreator = text => ({type: 'updatePostText', text})
+export const addPost = (newPostText) => ({type: ADD_POST, newPostText})
 export const setProfileInfo = profile => ({type: SET_PROFILE_INFO, profile})
 export const setUserStatus = status => ({type: SET_USER_STATUS, status})
 
@@ -63,17 +61,10 @@ let initializationState = {
 let profileReducer = (state = initializationState, action) => {
     let copyState
     switch (action.type) {
-        case updatePostText: {
-            copyState = {
-                ...state,
-                newPostText: action.text
-            }
-            return copyState
-        }
-        case addPost:
+        case ADD_POST:
             let newPost = {
                 id: state.postData.length + 1,
-                post: state.newPostText,
+                post: action.newPostText,
                 likeCount: 0
             }
             copyState = {

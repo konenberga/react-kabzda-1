@@ -22,7 +22,13 @@ export const authAPI = {
             axiosInstance.get(`auth/me`)
                 .then(response => response.data)
         )
-    }
+    },
+    // login(formData) {
+    //     return (
+    //         axiosInstance.post(`auth/login`,{formData})
+    //             .then(response => response.data)
+    //     )
+    // }
 }
 
 export const followAPI ={
