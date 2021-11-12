@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="7ee5b0b3-3d58-4ace-a928-16382bfa475f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main-content/pageContent/profile/profileInfo/ProfileStatus.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/profile/profileInfo/ProfileStatus.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main-content/pageContent/login/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/login/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,18 +46,18 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\it-kamasutra\react-kabzda-kak-prosto\projects\01-first-project\react-kabzda-1\src\components" />
+      <recent name="D:\it-kamasutra\react-kabzda-kak-prosto\projects\01-first-project\react-kabzda-1\src\components\main-content" />
+      <recent name="D:\it-kamasutra\react-kabzda-kak-prosto\projects\01-first-project\react-kabzda-1\src\components\main-content\pageContent" />
+      <recent name="D:\it-kamasutra\react-kabzda-kak-prosto\projects\01-first-project\react-kabzda-1\src\components\main-content\pageContent\myNewsfeed" />
+      <recent name="D:\it-kamasutra\react-kabzda-kak-prosto\projects\01-first-project\react-kabzda-1\src\components\main-content\navBar" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\it-kamasutra\react-kabzda-kak-prosto\projects\01-first-project\react-kabzda-1\src\components\main-content\pageContent\dialogs" />
       <recent name="D:\it-kamasutra\react-kabzda-kak-prosto\projects\01-first-project\react-kabzda-1\src\components\main-content\pageContent\dialogs\message" />
       <recent name="D:\it-kamasutra\react-kabzda-kak-prosto\projects\01-first-project\react-kabzda-1\src\components\main-content\pageContent\dialogs\dialogItem" />
       <recent name="D:\it-kamasutra\react-kabzda-kak-prosto\projects\01-first-project\react-kabzda-1\src\components\main-content\pageContent\profile\myPosts\post" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\it-kamasutra\react-kabzda-kak-prosto\projects\01-first-project\react-kabzda-1\src\components\main-content\pageContent" />
-      <recent name="D:\it-kamasutra\react-kabzda-kak-prosto\projects\01-first-project\react-kabzda-1\src\components\main-content\pageContent\myNewsfeed" />
-      <recent name="D:\it-kamasutra\react-kabzda-kak-prosto\projects\01-first-project\react-kabzda-1\src\components\main-content\navBar" />
-      <recent name="D:\it-kamasutra\react-kabzda-kak-prosto\projects\01-first-project\react-kabzda-1\src\components\main-content\aside" />
-      <recent name="D:\it-kamasutra\react-kabzda-kak-prosto\projects\01-first-project\react-kabzda-1\src\components\page-contents" />
     </key>
   </component>
   <component name="RunManager">
@@ -147,7 +151,8 @@
       <workItem from="1636458323587" duration="594000" />
       <workItem from="1636532379510" duration="3769000" />
       <workItem from="1636616889798" duration="12598000" />
-      <workItem from="1636640812055" duration="2271000" />
+      <workItem from="1636640812055" duration="2597000" />
+      <workItem from="1636702862532" duration="5138000" />
     </task>
     <servers />
   </component>
@@ -168,22 +173,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="707" y="376" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1040@0.0.1920.1040" timestamp="1632252558244" />
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1635409789522">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom" timestamp="1636704258178">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1635409789522" />
-    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1635409789522">
+    <state width="1899" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1636704258178" />
+    <state width="1899" height="282" key="GridCell.Tab.0.center" timestamp="1636704258178">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1635409789522" />
-    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1635409789522">
+    <state width="1899" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1636704258178" />
+    <state width="1899" height="282" key="GridCell.Tab.0.left" timestamp="1636704258178">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1635409789522" />
-    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1635409789522">
+    <state width="1899" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1636704258178" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right" timestamp="1636704258178">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1635409789522" />
+    <state width="1899" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1636704258178" />
     <state x="665" y="231" key="RollbackChangesDialog" timestamp="1633591844725">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
