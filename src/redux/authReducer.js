@@ -5,23 +5,44 @@ const SET_AUTH_USER_DATA = 'SET_AUTH_USER_DATA'
 
 
 //actions creators
-export const setAuthUserData = (email, id, login) => ({type: SET_AUTH_USER_DATA, email, id, login})
+export const setAuthUserData = (email, id, login , isAuth) => ({type: SET_AUTH_USER_DATA, email, id, login, isAuth})
 
 //thunk
-export const authMeThC = () => {
+export const authMe = () => {
     return (dispatch) => {
         authAPI.authMe()
             .then(data => {
                 if(data.resultCode === 0) {
                     let {email, id, login} = data.data
-                    dispatch(setAuthUserData(email, id, login))
+                    dispatch(setAuthUserData(email, id, login, true))
                 }
 
             })
     }
 }
 
+export const login = (email, password, rememberMe) => {
+    return (dispatch) => {
+        authAPI.login(email, password, rememberMe)
+            .then(response => {
+                if (response.resultCode === 0) {
+                    dispatch(authMe())
+                }
+            })
+    }
+}
 
+
+export const logout = () => {
+    return (dispatch) => {
+        authAPI.logout()
+            .then(response => {
+                if (response.resultCode === 0) {
+                    dispatch(setAuthUserData(null, null, null, false))
+                }
+            })
+}
+}
 
 
 //init state
@@ -42,12 +63,14 @@ const authReducer = (state = initializationState, action) => {
                 email: action.email,
                 id: action.id,
                 login: action.login,
-                isAuth: true
+                isAuth: action.isAuth
             }
 
         default :
             return state
     }
 }
+
+
 
 export default authReducer
