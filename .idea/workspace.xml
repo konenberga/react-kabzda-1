@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ee5b0b3-3d58-4ace-a928-16382bfa475f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/profile/profileInfo/ProfileStatusClassComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/headerContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/headerContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main-content/pageContent/login/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/login/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main-content/pageContent/profile/profileInfo/ProfileStatus.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/profile/profileInfo/ProfileStatus.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/main-content/pageContent/profile/profileInfo/profileinfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/main-content/pageContent/profile/profileInfo/profileinfo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/authReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +17,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -157,7 +156,9 @@
       <workItem from="1636718906251" duration="4221000" />
       <workItem from="1636959850164" duration="8897000" />
       <workItem from="1637134376240" duration="1764000" />
-      <workItem from="1637150395369" duration="7829000" />
+      <workItem from="1637150395369" duration="10083000" />
+      <workItem from="1637232747365" duration="2705000" />
+      <workItem from="1637562586385" duration="917000" />
     </task>
     <servers />
   </component>

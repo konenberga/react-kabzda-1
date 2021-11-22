@@ -7,7 +7,7 @@ const SET_AUTH_USER_DATA = 'SET_AUTH_USER_DATA'
 //actions creators
 export const setAuthUserData = (email, id, login , isAuth) => ({type: SET_AUTH_USER_DATA, email, id, login, isAuth})
 
-//thunk
+//thunk creators
 export const authMe = () => {
     return (dispatch) => {
         authAPI.authMe()
